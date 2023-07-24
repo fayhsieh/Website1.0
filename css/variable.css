@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+:root {
+  --font-heading: 'Outfit', sans-serif;
+  --font-content: 'Lato', sans-serif;
+  --color-synctify: #008d71;
+  --color-synctify-200: #006D51;
+  --color-teal: #23a197;
+  --color-celadon-green: #a4cfbd;
+  --color-gray-green: #3d5a55;
+  --color-green-100: #ebf5f1;
+  --color-green-200: #bed2c4;
+  --color-green-300: #2c4b4c;
+  --color-orange-100: #fdf0ea;
+  --color-orange-200: #efc2ac;
+  --color-orange-300: #e7772d;
+  --color-bg-green: #E6FCF7;
+  --color-bg-n: #F8F8F8;
+  --color-bg-purple: #F1EAFF;
+  --color-bg-pink: #FFE5F2;
+  --color-bg-yellow: #FEF7E8;
+  --color-n-100: #FFFFFF;
+  --color-n-200: #F0F0F0;
+  --color-n-300: #D2D2D2;
+  --color-n-400: #B4B4B4;
+  --color-n-500: #979797;
+  --color-n-600: #797979;
+  --color-n-700: #5B5B5C;
+  --color-n-800: #3E3E3E;
+  --color-n-900: #111112;
+  --color-success: #6EC800;
+  --color-danger: #EB4646;
+  --border-radius-s: 4px;
+  --border-radius-m: 8px;
+  --border-radius-l: 12px;
+  --box-shadow-navigation: 0px 10px 10px -10px rgba(17, 17, 18, 0.05);
+  --box-shadow-card: 2px 4px 4px 0px rgba(17, 17, 18, 0.03);
+  --box-shadow-button: 0px 2px 6px 0px rgba(17, 17, 18, 0.01);
+  --container-width-xxxl: 1524px;
+  --container-width-xxl: 1280px;
+  --container-width-xl: 1140px;
+}
+/*# sourceMappingURL=variable.css.map */

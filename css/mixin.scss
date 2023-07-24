@@ -1,0 +1,52 @@
+//------------------
+// Mixin
+//------------------
+
+@mixin rwd--container {
+    max-width: 100%;
+    padding: 0 24px;
+
+    @media screen and (min-width: 1200px) {
+        max-width: var(--container-width-xl);
+        padding: 0;
+    }
+
+    @media screen and (min-width: 1400px) {
+        max-width: var(--container-width-xxl);
+    }
+
+    @media screen and (min-width: 1600px) {
+        max-width: var(--container-width-xxxl);
+    }
+}
+
+@mixin rwd--column($col) {
+    @media screen and (min-width: 1200px) {
+        width: calc((var(--container-width-xxl))/12 * #{$col});
+    }
+
+    @media screen and (min-width: 1400px) {
+        width: calc((var(--container-width-xxl))/12 * #{$col});
+    }
+
+    @media screen and (min-width: 1600px) {
+        width: calc((var(--container-width-xxxl))/12 * #{$col});
+    }
+}
+
+//------------------
+// Iconfont
+//------------------
+
+@mixin ti {
+    font-family: "tabler-icons" !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

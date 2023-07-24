@@ -1,0 +1,116 @@
+@import 'mixin';
+
+//------------------
+// Reset CSS
+//------------------
+
+* {
+    -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+ul, li {
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+//------------------
+// Override WP Theme
+//------------------
+
+body.page {
+    
+    // Hide Default Banner
+    .page-header-image {
+        display: none;
+    }
+}
+
+// Grid System
+.site-main .section-wrap {
+
+    // Container width
+    & > .wp-block-group__inner-container {
+        @include rwd--container;
+    }
+
+    // Columns
+    & > .wp-block-group__inner-container {
+        .row {
+            padding: 0;
+            gap: 0;
+            margin-left: -12px;
+            margin-right: -12px;
+            margin-bottom: 0;
+            align-items: center !important;
+
+            @media screen and (max-width: 1199.98px) {
+                margin-left: -24px;
+                margin-right: -24px;
+                flex-direction: column;
+            }
+
+            .col-xl-3,
+            .col-xl-4,
+            .col-xl-5,
+            .col-xl-6,
+            .col-xl-7,
+            .col-xl-8,
+            .col-xl-10,
+            .col-xl-12 {
+                width: 100%;
+                flex: 0 0 auto;
+                padding-left: 12px;
+                padding-right: 12px;
+
+                @media screen and (max-width: 1199.98px) {
+                    padding-left: 24px;
+                    padding-right: 24px;
+                }
+            }
+
+            @media screen and (min-width: 1200px) {
+
+                .col-xl-3 {
+                    width: 25%;
+                }
+
+                .col-xl-4 {
+                    width: 33.33333333%;
+                }
+                
+                .col-xl-5 {
+                    width: 41.66666667%;
+                }
+
+                .col-xl-6 {
+                    width: 50%;
+                }
+    
+                .col-xl-7 {
+                    width: 58.33333333%;
+                }
+
+                .col-xl-8 {
+                    width: 66.66666667%;
+                }
+
+                .col-xl-10 {
+                    width: 83.33333333%;
+                }
+            }
+        }
+    }
+
+    // Figure
+    figure.wp-block-image {
+        margin: 0;
+    }
+}

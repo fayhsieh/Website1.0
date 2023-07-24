@@ -1,2 +1,2 @@
-# official-website
-Wordpress stylesheet backup
+# Synctify 1.0
+WordPress stylesheet backup

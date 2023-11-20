@@ -1,2 +1,2 @@
-# Synctify 1.0
+# Website 1.0
 WordPress stylesheet backup
